@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Formatting</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      hr {
+        border: 1px solid #ccc;
+      }
+      section {
+        background: #fff;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      table,
+      thead,
+      tbody,
+      tfoot,
+      th,
+      tr,
+      td {
+        border: 1px solid;
+        border-collapse: collapse;
+        padding: 15px;
+        text-align: center;
+      }
+
+      thead,
+      th {
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text Formatting Tags</h1>
+    <hr />
+
+    <section>
+      <h2>Mark Tag</h2>
+      <p>
+        Highlight important text with <mark>Lorem ipsum</mark> dolor sit amet.
+      </p>
+    </section>
+
+    <section>
+      <h2><b>b Tag</b> (Bold)</h2>
+      <p>Bold text using <b>Lorem ipsum</b> dolor sit amet.</p>
+    </section>
+
+    <section>
+      <h2><strong>strong Tag</strong> (Strong Emphasis)</h2>
+      <p>Strong emphasis with <strong>Lorem ipsum</strong> dolor sit amet.</p>
+    </section>
+
+    <section>
+      <h2><i>i Tag</i> (Italic)</h2>
+      <p>Italicize text with <i>Lorem ipsum</i> dolor sit amet.</p>
+    </section>
+
+    <section>
+      <h2><em>em Tag</em> (Emphasized Text)</h2>
+      <p>Emphasize text with <em>Lorem ipsum</em> dolor sit amet.</p>
+    </section>
+
+    <section>
+      <h2><u>u Tag</u> (Underline)</h2>
+      <p>Underline text with <u>Lorem ipsum</u> dolor sit amet.</p>
+    </section>
+
+    <section>
+      <h2><del>del Tag</del> (Deleted Text)</h2>
+      <p>Strike through text with <del>Lorem ipsum</del> dolor sit amet.</p>
+    </section>
+
+    <section>
+      <h2><ins>ins Tag</ins> (Inserted Text)</h2>
+      <p>Show inserted text with <ins>Lorem ipsum</ins> dolor sit amet.</p>
+    </section>
+
+    <section>
+      <h2><small>small Tag</small> (Smaller Text)</h2>
+      <p>Make text smaller with <small>Lorem ipsum</small> dolor sit amet.</p>
+    </section>
+
+    <section>
+      <h2><abbr>abbr Tag</abbr> (Abbreviation)</h2>
+      <p>
+        Use <abbr title="Hypertext Markup Language">HTML</abbr> for
+        abbreviations.
+      </p>
+    </section>
+
+    <section>
+      <h2><sup>sup Tag</sup> (Superscript)</h2>
+      <p>Display superscript with E = mc<sup>2</sup>.</p>
+    </section>
+
+    <section>
+      <h2><sub>sub Tag</sub> (Subscript)</h2>
+      <p>Display subscript with H<sub>2</sub>O.</p>
+    </section>
+
+    <section>
+      <h2><code>code Tag</code> (Code Snippet)</h2>
+      <p>Display code using <code>&lt;html&gt;&lt;/html&gt;</code>.</p>
+    </section>
+
+    <section>
+      <h2>
+        <pre>pre Tag</pre>
+        (Preformatted Text)
+      </h2>
+      <pre>
+This text
+    is preformatted
+        to maintain spaces and line breaks.
+        </pre
+      >
+    </section>
+
+    <section>
+      <h2>blockquote Tag</h2>
+      <blockquote cite="https://www.google.com">
+        "This is an Google of a blockquote. It is used to quote text from an
+        external source."
+      </blockquote>
+    </section>
+
+    <hr />
+    <section>
+      <marquee behavior="Scroll" direction="left" scrollamount="10"
+        >Jaisaikumar</marquee
+      >
+      <marquee behavior="Slide" direction="left" scrollamount="10"
+        >Jaisaikumar</marquee
+      >
+      <marquee behavior="alternate" direction="left" scrollamount="10"
+        >Jaisaikumar</marquee
+      >
+      <marquee behavior="scroll" direction="right" scrollamount="10"
+        >Jaisaikumar</marquee
+      >
+      <marquee behavior="slide" direction="right" scrollamount="10"
+        >Jaisaikumar</marquee
+      >
+      <marquee behavior="alternate" direction="right" scrollamount="10"
+        >Jaisaikumar</marquee
+      >
+      <marquee behavior="scroll" direction="up" scrollamount="2"
+        >Jaisaikumar</marquee
+      >
+      <marquee behavior="scroll" direction="down" scrollamount="2"
+        >Jaisaikumar</marquee
+      >
+    </section>
+    <hr />
+    <h1>Table</h1>
+    <center>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Timings</th>
+            <th>Activity</th>
+            <th>Break time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3" style="background-color: azure">Morning</td>
+            <td>7:30 am - 9:00 am</td>
+            <td>CSA class</td>
+            <td>No break</td>
+          </tr>
+          <tr>
+            <td>9:00 am- 10:00 am</td>
+            <td>Practice the class</td>
+            <td>15 Mintues</td>
+          </tr>
+          <tr>
+            <td colspan="2" style="background-color: #ccc">BREAK FAST</td>
+            <td>30 Minutes</td>
+          </tr>
+          <tr>
+            <td rowspan="3" style="background-color: azure">Afternoon</td>
+            <td>12:00 pm -12:30 pm</td>
+            <td>Scrum call</td>
+            <td>No break</td>
+          </tr>
+          <tr>
+            <td>12:30pm -1:00pm</td>
+            <td>Social media</td>
+            <td>30 Minutes</td>
+          </tr>
+          <tr>
+            <td colspan="2" style="background-color: #ccc">Lunch</td>
+            <td>1 hour</td>
+          </tr>
+
+          <tr style="background-color: aquamarine">
+            <td colspan="4">Sleep</td>
+          </tr>
+          <tr>
+            <td rowspan="3" style="background-color: azure">Evening</td>
+            <td>6:30PM -7:30PM</td>
+            <td>Learning</td>
+            <td>15 Minutes</td>
+          </tr>
+          <tr>
+            <td>7:30 PM-8:30PM</td>
+            <td>React Js</td>
+            <td>No break</td>
+          </tr>
+          <tr>
+            <td colspan="2">Dinner</td>
+            <td>1 hour</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td colspan="3" style="background-color: rgb(225, 128, 128)">
+            I will login to work
+          </td>
+          <td>11PM-7AM</td>
+        </tfoot>
+      </table>
+    </center>
+  </body>
+</html>

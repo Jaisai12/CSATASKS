@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Specificity Hierarchy</title>
+
+    <link rel="stylesheet" href="Task9.css" />
+
+    <style>
+      body {
+        background-color: lightblue;
+      }
+
+      .box {
+        background-color: yellow;
+        color: black;
+      }
+
+      #uniqueBox {
+        background-color: green;
+      }
+
+      .box:hover {
+        background-color: orange;
+      }
+
+      .importantBox {
+        background-color: red !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="uniqueBox" style="background-color: pink">
+      Inline Style Box
+    </div>
+
+    <div class="box importantBox">Important Rule Box</div>
+    <button type="submit">Submit</button>
+    <button>CLick here</button>
+  </body>
+</html>

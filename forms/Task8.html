@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="task8.css" />
+  </head>
+  <body>
+    <div class="signup-container">
+      <h2>Sign up</h2>
+      <form action="" id="signupForm">
+        <div class="input-group">
+          <label for="FirstName">First Name:</label>
+          <input
+            type="text"
+            name="FirstName"
+            id="FirstName"
+            required
+            placeholder="Enter First Name"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="LastName">Last Name:</label>
+          <input
+            type="text"
+            id="LastName"
+            required
+            placeholder="Enter Last Name"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="Email" id="mail">Email:</label>
+          <input type="email" id="Email" placeholder="Enter Your Email" />
+        </div>
+
+        <div class="input-group">
+          <label for="Mobile">Mobile Number:</label>
+          <input
+            type="number"
+            name="Mobile"
+            id="Mobile"
+            placeholder="Enter your Phone Number"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="Pass">Password:</label>
+          <input
+            type="password"
+            id="Pass"
+            required
+            minlength="8"
+            placeholder="Enter Password"
+          />
+        </div>
+        <input type="checkbox" id="showPassword" onclick="UnHide()" />
+        <label for="showPassword">Show Password</label>
+
+        <div class="input-group">
+          <label for="repassword">Re-enter Password:</label>
+          <input
+            type="password"
+            id="repassword"
+            required
+            placeholder="Re-enter Password"
+          />
+        </div>
+
+        <div class="input-group">
+          <label>Mention your Gender:</label>
+          <input type="radio" name="Gender" id="Male" />
+          <label for="Male">Male</label>
+          <input type="radio" name="Gender" id="Female" />
+          <label for="Female">Female</label>
+        </div>
+
+        <div class="input-group">
+          <label for="profession">Enter your profession:</label>
+          <select name="profession" id="profession">
+            <option value="Student">Student</option>
+            <option value="Employed">Employed</option>
+            <option value="Self employed">Self Employed</option>
+            <option value="unemployed">Unemployed</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="DOB">Date of Birth:</label>
+          <input type="date" name="DOB" id="DOB" />
+        </div>
+
+        <div class="input-group1">
+          <input type="checkbox" name="terms" id="terms" />
+          <label for="terms">I acknowledge the terms and conditions</label>
+        </div>
+
+        <div class="button-group">
+          <button disabled type="submit" id="submitBtn">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      const mypass = document.getElementById("Pass");
+      const repass = document.getElementById("repassword");
+      const submitBtn = document.getElementById("submitBtn");
+      const signupForm = document.getElementById("signupForm");
+      const terms = document.getElementById("terms");
+
+      function UnHide() {
+        if (mypass.type === "password") {
+          mypass.type = "text";
+        } else {
+          mypass.type = "password";
+        }
+      }
+
+      signupForm.addEventListener("submit", (event) => {
+        if (mypass.value !== repass.value) {
+          event.preventDefault();
+          alert("Passwords don't match!");
+        }
+      });
+
+      terms.addEventListener("change", () => {
+        if (terms.checked) {
+          submitBtn.disabled = false;
+        } else {
+          submitBtn.disabled = true;
+        }
+      });
+    </script>
+  </body>
+</html>
