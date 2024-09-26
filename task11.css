@@ -1,0 +1,95 @@
+body {
+  align-items: center;
+  text-align: center;
+  place-items: center;
+  font-size: 16px; /* Default font size */
+  height: 100vh;
+}
+
+/* Absolute Units Styling */
+/* 96 px = 1 inch */
+.pixels {
+  height: 96px;
+  width: 96px;
+  border: 1px solid;
+  margin-inline: auto;
+}
+
+.inches {
+  height: 1in;
+  width: 1in;
+  border: 1px solid;
+  margin-inline: auto;
+}
+
+.Centimeters {
+  height: 2.54cm;
+  width: 2.54cm;
+  border: 1px solid;
+  margin-inline: auto;
+}
+
+.milimeter {
+  height: 25.4mm;
+  width: 25.4mm;
+  border: 1px solid;
+  margin-inline: auto;
+}
+
+.points {
+  height: 72pt;
+  width: 72pt;
+  border: 1px solid;
+  margin-inline: auto;
+}
+
+.pica {
+  height: 6pc;
+  width: 6pc;
+  border: 1px solid;
+  margin-inline: auto;
+  background-image: linear-gradient(to top,red,green);
+}
+
+/* Relative Units Styling */
+
+/* em: Relative to the element's font size */
+.em {
+  height: 6em;
+  width: 6em;
+  border: 1px solid;
+  margin-inline: auto;
+  font-size: 16px;
+}
+
+/* rem: Relative to the root element's font size */
+.rem {
+  height: 6rem;
+  width: 6rem;
+  border: 1px solid;
+  margin-inline: auto;
+}
+
+/* vw: 1% of the viewport width */
+.vw {
+  height: 10vw;
+  width: 10vw;
+  border: 1px solid;
+  margin-inline: auto;
+}
+
+/* vh: 1% of the viewport height */
+.vh {
+  height: 10vh;
+  width: 10vh;
+  border: 1px solid;
+  margin-inline: auto;
+}
+
+/* %: Relative to the parent container */
+.percentage {
+  height: 50%;
+  width: 40%;
+  border: 1px solid;
+  margin-inline: auto;
+}

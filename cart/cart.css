@@ -1,0 +1,37 @@
+.maincart {
+  border: 1px solid;
+  height: 300px;
+  width: 250px;
+  margin-inline: auto;
+  line-height: 1.5;
+  position: relative;
+}
+
+.incart {
+  margin: 10px;
+}
+.perf {
+  color: rgba(128, 128, 128, 0.571);
+}
+
+.newprice {
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(3, 104, 0);
+}
+.oldprice {
+  text-decoration: line-through;
+  color: rgba(128, 128, 128, 0.571);
+}
+
+.cartbtn {
+  background-color: rgb(3, 104, 0);
+  color: white;
+  text-align: center;
+  align-self: center;
+  position: absolute;
+  left: 30%;
+  bottom: 10px;
+  border-radius: 5px;
+  padding: 5px;
+}
