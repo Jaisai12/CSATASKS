@@ -4,6 +4,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Base font and box-sizing adjustments for all devices */
+
+/* Global layout adjustments */
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-size: 1rem;
+}
 
 .Mainheader {
   display: flex;
@@ -137,28 +150,26 @@ ul li:hover::after {
 }
 
 #contact {
-  background-color: #f9f9f9; /* Light background for contrast */
-  padding: 40px; /* Space around the section */
-  text-align: center; /* Center-align text */
+  background-color: #f9f9f9; 
+  padding: 40px; 
+  text-align: center;
 }
 
 .contact-card {
-  max-width: 90%; /* Limit the width of the card */
-  margin: 0 auto; /* Center the card horizontally */
-  padding: 20px; /* Space inside the card */
+  max-width: 90%; 
+  margin: 0 auto; 
+  padding: 20px; 
   background: linear-gradient(
     to left,
     rgb(6, 144, 213),
     rgb(158, 158, 203)
-  ); /* White background for the card */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
+  ); 
+  border-radius: 8px;  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
 
 .contact-card h4 {
-  font-size: 1.5rem; /* Font size for the heading */
-  margin-bottom: 20px; /* Space below the heading */
-  color: white; /* Dark color for the heading */
+  font-size: 1.5rem; 
+  margin-bottom: 20px;
+  color: white; \
 }
 
 .contact-card p {
@@ -180,25 +191,112 @@ ul li:hover::after {
 }
 
 footer {
-  background-color: rgb(63, 76, 77); /* Dark background for the footer */
-  color: white; /* White text color */
-  text-align: center; /* Center the text */
-  padding: 20px; /* Padding around the footer */
-  position: relative; /* Ensure proper positioning */
+  background-color: rgb(63, 76, 77); 
+  color: white; 
+  text-align: center;
+  padding: 20px; 
+    position: relative; 
   border-radius: 20px 20px 0 0;
 }
 
 .footer-content {
-  margin: 0 auto; /* Center content */
-  max-width: 800px; /* Limit width of footer content */
+  margin: 0 auto; 
+  max-width: 800px; 
 }
 
 .footer-links a {
   color: #0073e6;
-  text-decoration: none; /* Remove underline */
-  margin: 0 10px; /* Space between links */
-}
+  text-decoration: none; 
+  margin: 0 10px; }
 
 .footer-links a:hover {
   text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .Mainheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .Nav-bar {
+    display: none;
+  }
+
+  .MainName {
+    font-size: 18px;
+  }
+
+  .subintro1,
+  .subintro2 {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .skill-icon {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .education-item {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact-card {
+    width: 100%;
+    padding: 20px;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .Mainheader {
+    display: block;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .MainName {
+    text-align: center;
+  }
+  .subintro2,
+  .mainimg {
+    display: none;
+  }
+  ul li a {
+    display: none;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .subintro1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .skill-icon {
+    grid-template-columns: 1fr;
+  }
+
+  .icons {
+    width: 100%;
+  }
+
+  .education-item {
+    width: 100%;
+  }
+
+  .contact-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  footer {
+    padding: 10px;
+    text-align: center;
+  }
 }
