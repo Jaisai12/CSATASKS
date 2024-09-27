@@ -1,0 +1,204 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Mainheader {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(63, 76, 77);
+  color: white;
+  height: 50px;
+  border-radius: 0 0 20px 20px;
+}
+.MainName {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.Nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  display: inline;
+
+  list-style: none;
+  position: relative;
+  margin: 0 15px;
+  cursor: pointer;
+}
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+ul li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.4s ease-in-out;
+}
+
+ul li:hover::after {
+  width: 100%;
+}
+
+.subintro1 {
+  width: 50%;
+
+  text-align: justify;
+  position: relative;
+  top: 50px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  height: auto;
+}
+
+.about-h4 {
+  text-align: center;
+}
+
+.Intro {
+  display: flex;
+  margin-inline: auto;
+  justify-content: space-around;
+  margin-block: 30px;
+}
+
+.subintro2 {
+  position: relative;
+  top: 30px;
+}
+
+#Main-intro {
+  margin: 5px;
+  padding: 10px;
+}
+
+#Skills {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.skill-h4 {
+  text-align: center;
+  padding: 20px;
+}
+
+.skill-icon {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+  place-items: center;
+}
+.icons {
+  background: linear-gradient(to left, rgb(6, 144, 213), rgb(158, 158, 203));
+  text-align: center;
+  width: 250px;
+  padding: 10px;
+  height: 100px;
+  border-radius: 10px;
+  font-weight: bolder;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#education {
+  margin-block: 40px;
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+.education-item {
+  display: flex;
+  width: 90%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  margin-inline: auto;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+#contact {
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 40px; /* Space around the section */
+  text-align: center; /* Center-align text */
+}
+
+.contact-card {
+  max-width: 90%; /* Limit the width of the card */
+  margin: 0 auto; /* Center the card horizontally */
+  padding: 20px; /* Space inside the card */
+  background: linear-gradient(
+    to left,
+    rgb(6, 144, 213),
+    rgb(158, 158, 203)
+  ); /* White background for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.contact-card h4 {
+  font-size: 1.5rem; /* Font size for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  color: white; /* Dark color for the heading */
+}
+
+.contact-card p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: white;
+}
+
+.contact-card a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+  color: #005bb5;
+}
+
+footer {
+  background-color: rgb(63, 76, 77); /* Dark background for the footer */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 20px; /* Padding around the footer */
+  position: relative; /* Ensure proper positioning */
+  border-radius: 20px 20px 0 0;
+}
+
+.footer-content {
+  margin: 0 auto; /* Center content */
+  max-width: 800px; /* Limit width of footer content */
+}
+
+.footer-links a {
+  color: #0073e6;
+  text-decoration: none; /* Remove underline */
+  margin: 0 10px; /* Space between links */
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
