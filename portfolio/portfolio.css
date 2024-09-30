@@ -23,8 +23,8 @@ body {
   justify-content: space-around;
   background-color: rgb(63, 76, 77);
   color: white;
-  height: 50px;
-  border-radius: 0 0 20px 20px;
+  height: 75px;
+  border-radius: 0 0 40px 40px;
 }
 .MainName {
   font-size: 20px;
@@ -84,6 +84,7 @@ ul li:hover::after {
 
 .Intro {
   display: flex;
+  flex-direction: row;
   margin-inline: auto;
   justify-content: space-around;
   margin-block: 30px;
@@ -150,26 +151,24 @@ ul li:hover::after {
 }
 
 #contact {
-  background-color: #f9f9f9; 
-  padding: 40px; 
+  background-color: #f9f9f9;
+  padding: 40px;
   text-align: center;
 }
 
 .contact-card {
-  max-width: 90%; 
-  margin: 0 auto; 
-  padding: 20px; 
-  background: linear-gradient(
-    to left,
-    rgb(6, 144, 213),
-    rgb(158, 158, 203)
-  ); 
-  border-radius: 8px;  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(to left, rgb(6, 144, 213), rgb(158, 158, 203));
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 .contact-card h4 {
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   margin-bottom: 20px;
-  color: white; \
+  color: white;
 }
 
 .contact-card p {
@@ -191,23 +190,24 @@ ul li:hover::after {
 }
 
 footer {
-  background-color: rgb(63, 76, 77); 
-  color: white; 
+  background-color: rgb(63, 76, 77);
+  color: white;
   text-align: center;
-  padding: 20px; 
-    position: relative; 
+  padding: 20px;
+  position: relative;
   border-radius: 20px 20px 0 0;
 }
 
 .footer-content {
-  margin: 0 auto; 
-  max-width: 800px; 
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 .footer-links a {
   color: #0073e6;
-  text-decoration: none; 
-  margin: 0 10px; }
+  text-decoration: none;
+  margin: 0 10px;
+}
 
 .footer-links a:hover {
   text-decoration: underline;
