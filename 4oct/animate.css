@@ -56,7 +56,9 @@
   top: -100px;
   background: rgba(255, 255, 255, 0.5);
   animation: anima linear infinite;
+  animation-play-state: ;
 }
+
 
 @keyframes anima {
   0% {
@@ -67,6 +69,18 @@
   }
 }
 
-.roc:hover {
-  transform: translateX(50px);
+.controlbt {
+  color: black;
+  text-align: center;
+  position: relative;
+  top: -120px;
+  left: 7%;
+
+  transform: translateX(-40%);
+}
+
+.controlbt p {
+  background-color: white;
+  width: 100px;
+  margin-bottom: 10px;
 }

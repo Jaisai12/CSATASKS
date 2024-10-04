@@ -8,6 +8,12 @@
   </head>
   <body>
     <div class="Scene">
+      <div class="controlbt">
+        <p id="play">Play</p>
+        <p id="pause">Pause</p>
+        <p id="exit">Exit</p>
+      </div>
+
       <div class="roc">
         <img src="icons8-launch-50.png" alt="" />
       </div>
@@ -32,6 +38,25 @@
         }
       }
       star();
+      const play = document.getElementById("play");
+      const pause = document.getElementById("pause");
+      const exit = document.getElementById("exit");
+      function playanimate() {}
+      play.onclick = function () {
+        document.querySelectorAll(".Scene i").forEach((star) => {
+          star.style.animationPlayState = "running";
+        });
+        document.querySelector(".roc ").style.animationPlayState = "running";
+      };
+      pause.onclick = function () {
+        document.querySelectorAll(".Scene i").forEach((star) => {
+          star.style.animationPlayState = "paused";
+        });
+        document.querySelector(".roc ").style.animationPlayState = "paused";
+      };
+      exit.onclick = function () {
+        window.close();
+      };
     </script>
   </body>
 </html>
