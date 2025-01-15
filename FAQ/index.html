@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex flex-col h-screen w-full font-['Work_Sans']">
+    <div
+      class="h-[50%] w-full relative bg-[url('images/background-pattern-desktop.svg')] bg-cover bg-center"
+    >
+      <div
+        class="absolute bg-[#F8F0FF] h-[600px] z-50 mx-auto w-[80%] top-1/2 left-1/2 transform -translate-x-1/2 p-4 sm:p-6 space-y-4 sm:space-y-6"
+      >
+        <div class="flex items-center space-x-4">
+          <img src="images/icon-star.svg" alt="Star icon" width="50px" />
+          <p class="font-bold text-3xl sm:text-5xl">FAQs</p>
+        </div>
+
+        <!-- FAQ Item 1 -->
+        <div class="flex flex-col">
+          <div
+            class="faq-header flex justify-between items-center cursor-pointer"
+          >
+            <p class="text-lg sm:text-xl font-bold">
+              What is Frontend Mentor, and how will it help me?
+            </p>
+            <img src="images/icon-plus.svg" alt="Expand icon" width="30px" />
+          </div>
+          <p class="faq-answer hidden mt-4">
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </p>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="flex flex-col">
+          <div
+            class="faq-header flex justify-between items-center cursor-pointer"
+          >
+            <p class="text-lg sm:text-xl font-bold">Is Frontend Mentor free?</p>
+            <img src="images/icon-plus.svg" alt="Expand icon" width="30px" />
+          </div>
+          <p class="faq-answer hidden mt-4">
+            Yes, Frontend Mentor offers both free and premium coding challenges,
+            with the free option providing access to a range of projects
+            suitable for all skill levels.
+          </p>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="flex flex-col">
+          <div
+            class="faq-header flex justify-between items-center cursor-pointer"
+          >
+            <p class="text-lg sm:text-xl font-bold">
+              Can I use Frontend Mentor projects in my portfolio?
+            </p>
+            <img src="images/icon-plus.svg" alt="Expand icon" width="30px" />
+          </div>
+          <p class="faq-answer hidden mt-4">
+            Yes, you can use projects completed on Frontend Mentor in your
+            portfolio. It's an excellent way to showcase your skills to
+            potential employers!
+          </p>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="flex flex-col">
+          <div
+            class="faq-header flex justify-between items-center cursor-pointer"
+          >
+            <p class="text-lg sm:text-xl font-bold">
+              How can I get help if I'm stuck on a Frontend Mentor challenge?
+            </p>
+            <img src="images/icon-plus.svg" alt="Expand icon" width="30px" />
+          </div>
+          <p class="faq-answer hidden mt-4">
+            The best place to get help is inside Frontend Mentor's Discord
+            community. There's a help channel where you can ask questions and
+            seek support from other community members.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#F8F0FF] w-full h-[50%]"></div>
+
+    <script>
+      const faqHeaders = document.querySelectorAll(".faq-header");
+      const faqAnswers = document.querySelectorAll(".faq-answer");
+      const plusIcons = document.querySelectorAll(".faq-header img");
+
+      faqHeaders.forEach((header, index) => {
+        header.addEventListener("click", () => {
+          const answer = header.nextElementSibling;
+
+          if (answer.classList.contains("hidden")) {
+            faqAnswers.forEach((ans, i) => {
+              if (i !== index) {
+                ans.classList.add("hidden");
+                plusIcons[i].src = "images/icon-plus.svg";
+              }
+            });
+
+            answer.classList.remove("hidden");
+            plusIcons[index].src = "images/icon-minus.svg";
+          } else {
+            answer.classList.add("hidden");
+            plusIcons[index].src = "images/icon-plus.svg";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
